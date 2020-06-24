@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            max-width: 320px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #9933cc;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .card{
+            margin: 0 auto;
+            margin-top: 10px;
+            max-width: 350px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: 0.3s;
+            font-size: 0;
+        }
+
+        .card:hover{
+            box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .calc-head #result{
+            width: 335px;
+            height: 100px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: right;
+            padding: 0 5px;
+            letter-spacing: 2px;
+        }
+
+        .calc-body .btn{
+            width: 87px;
+            height: 70px;
+            font-weight: bold;
+            font-size: 1rem;
+            background-color: #1f2326;
+            color: white;
+        }
+        
+        .calc-body .side-btn{
+            background-color: #5F4BB6;
+        }
+
+        .btn:hover{
+            background-color: orchid;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+                padding: 1%;
+            }
+
+            h1{
+                max-width: 250px;
+               
+            }
+            .card{
+                max-width: 280px;
+            }
+
+            .calc-head #result{
+                width: 267px;
+                height: 80px;
+                font-size: 1.5rem;
+            }
+
+            .calc-body .btn{
+            width: 70px;
+            height: 60px;
+            font-weight: bold;
+            font-size: 1rem;
+            background-color: #1f2326;
+            color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Calculator</h1>
+    <div class="card">
+        <div class="calc-head">
+            <input type="text" id="result" maxlength="10">
+        </div>
+
+        <div class="calc-body">
+
+            <div>
+                <input type="button" value="C" class="btn">
+                <input type="button" value="+/-" class="btn">
+                <input type="button" value="%" class="btn">
+                <input type="button" value="/" class="btn side-btn">
+            </div>
+
+            
+            <div>
+                <input type="button" value="7" class="btn">
+                <input type="button" value="8" class="btn">
+                <input type="button" value="9" class="btn">
+                <input type="button" value="X" class="btn side-btn">
+            </div>
+
+            
+            <div>
+                <input type="button" value="4" class="btn">
+                <input type="button" value="5" class="btn">
+                <input type="button" value="6" class="btn">
+                <input type="button" value="-" class="btn side-btn">
+            </div>  
+           
+
+            
+            <div>
+                <input type="button" value="3" class="btn">
+                <input type="button" value="2" class="btn">
+                <input type="button" value="1" class="btn">
+                <input type="button" value="+" class="btn side-btn">
+            </div>
+
+            <div>
+                <input type="button" value="0" class="btn">
+                <input type="button" value="." class="btn">
+                <input type="button" value="DEL" class="btn">
+                <input type="button" value="=" class="btn" style="background-color: orange;">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
